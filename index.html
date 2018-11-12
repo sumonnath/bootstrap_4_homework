@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bootstrap Components</title>	
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">	
+
+	<!-- navigation start -->		
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a href="#" class="navbar-brand text-white">Bootstrap</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link text-white" href="">Home</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link text-white dropdown-toggle" data-toggle="dropdown" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" href="">Navbar</a>
+
+						<div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+							<a href="#" class="dropdown-item">Tooltips</a>
+							<div class="dropdown-divider"></div>
+							<a href="#" class="dropdown-item">Modal</a>
+							<div class="dropdown-divider"></div>
+							<a href="#" class="dropdown-item">Popovers</a>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link text-white" href="">Card</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="">Progress</a></li>
+					<li class="nav-item"><a class="nav-link text-white" href="">Scrollspy</a></li>
+				</ul>
+				<form class="form-inline d-none d-md-block my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>	
+	<!-- navigation end -->
+
+	<!-- carousel start -->
+	<section class="slider">
+		<div class="container">
+			<div class="row">			
+				<div class="col-md-12 col-sm-12 col-12">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img class="d-block w-100" src="images/slider2.jpeg" alt="First slide">
+					      <div class="carousel-caption d-none d-sm-block">
+					        <h3>Web Development</h3>
+					        <p class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, error.</p>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/slider2.jpeg" alt="Second slide">
+					      <div class="carousel-caption d-none d-sm-block">
+					        <h3>Graphics Design</h3>
+					        <p class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, error.</p>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/slider2.jpeg" alt="Third slide">
+					      <div class="carousel-caption d-none d-sm-block">
+					        <h3>Digital Marketing</h3>
+					        <p class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, error.</p>
+					      </div>
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- carousel end -->
+	
+	<!-- tab nav start -->
+	<section class="tab_nav">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#accordion" role="tab" aria-controls="contact" aria-selected="false">Accordion</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="spy-tab" data-toggle="tab" href="#spy" role="tab" aria-controls="spy" aria-selected="false">Scrollspy</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="jumbotron">
+								<h1>Bootstrap Tutorial</h1> 
+								<p>Bootstrap is the most popular HTML, CSS...</p> 
+							</div>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="jumbotron">
+								<h1>John Keats</h1> 
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae molestias vero debitis natus eaque distinctio architecto velit nobis impedit provident!</p> 
+							</div>
+						</div>
+						<div class="tab-pane fade" id="accordion" role="tabpanel" aria-labelledby="accordion-tab">
+							<div class="accordion" id="accordion1">
+							  <div class="card">
+							    <div class="card-header" id="headingOne">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							          Accordion one
+							        </button>
+							      </h5>
+							    </div>
+
+							    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1">
+							      <div class="card-body">
+							        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum neque facilis est similique tenetur consectetur officiis. Quidem magnam laborum ea enim repellendus sed culpa mollitia accusantium, voluptates aspernatur ratione voluptatem.
+							      </div>
+							    </div>
+							  </div>
+							  <div class="card">
+							    <div class="card-header" id="headingTwo">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							          Accordion Two
+							        </button>
+							      </h5>
+							    </div>
+							    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+							      <div class="card-body">
+							        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. 
+							      </div>
+							    </div>
+							  </div>
+							  <div class="card">
+							    <div class="card-header" id="headingThree">
+							      <h5 class="mb-0">
+							        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							           Accordion Three
+							        </button>
+							      </h5>
+							    </div>
+							    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+							      <div class="card-body">
+							        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						
+						<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+							<div class="container-fluid secondForm">
+								<div class="row">
+									<div class="col-md-6 offset-md-3">
+										<div class="form2">
+											<div class="form_title">
+												<h1 class="text-center">Contact Info</h1>
+											</div>						
+											<form>
+											  <div class="form-row">
+											    <div class="form-group col-md-6">
+											      <label for="email">Email</label>
+											      <input type="email" class="form-control" id="email" placeholder="Email">
+											    </div>
+											    <div class="form-group col-md-6">
+											      <label for="password">Password</label>
+											      <input type="password" class="form-control" id="password" placeholder="Password">
+											    </div>
+											  </div>
+											  <div class="form-group">
+											    <label for="address">Address</label>
+											    <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+											  </div>
+											  <div class="form-group">
+											    <label for="address2">Address 2</label>
+											    <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor">
+											  </div>
+											  <div class="form-row">
+											    <div class="form-group col-md-6">
+											      <label for="city">City</label>
+											      <input type="text" class="form-control" id="city">
+											    </div>
+											    <div class="form-group col-md-4">
+											      <label for="state">State</label>
+											      <select id="state" class="form-control">
+											        <option selected>Choose...</option>
+											        <option>...</option>
+											      </select>
+											    </div>
+											    <div class="form-group col-md-2">
+											      <label for="zip">Zip</label>
+											      <input type="text" class="form-control" id="zip">
+											    </div>
+											  </div>
+											  <div class="form-group">
+											    <div class="form-check">
+											      <input class="form-check-input" type="checkbox" id="gridCheck">
+											      <label class="form-check-label" for="gridCheck">
+											        Check me out
+											      </label>
+											    </div>
+											  </div>
+											  <button type="submit" class="btn btn-primary submit_btn">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- tab nav start -->
+
+	<!-- pagination start -->
+	<section class="pagination_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form_link">
+						<nav class="" aria-label="pages navigation form_links">
+							<ul class="pagination justify-content-end">
+								<li class="page-item"><a href="fifthForm.html" class="page-link">Previous</a></li>
+								<li class="page-item active"><a href="form.html" class="page-link">1</a></li>
+								<li class="page-item"><a href="secondForm.html" class="page-link">2</a></li>
+								<li class="page-item"><a href="thirdForm.html" class="page-link">3</a></li>
+								<li class="page-item"><a href="fourthForm.html" class="page-link">4</a></li>
+								<li class="page-item"><a href="fifthForm.html" class="page-link">5</a></li>
+								<li class="page-item"><a href="fifthForm.html" class="page-link">Next</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- pagination end -->
+
+	<!-- collapse start -->
+	<section class="collapse_area">
+		<div class="container">
+			<div class="row">				
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-body text-center">
+							<h1 class="card-title">Bootstrap Collapse Area</h1>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						</div>
+						<p class="text-center">
+							<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm">
+							Collapsible Form
+							</button>
+							<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseForm2" aria-expanded="false" aria-controls="collapseForm2">
+							Collapsible Form
+							</button>
+						</p>
+						<div class="collapse" id="collapseForm">
+							<div class="card card-body">
+								<div class="contact_us">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 offset-md-3">
+												<div class="sign_up">
+													<div class="form_title">
+														<h1 class="text-center">Login</h1>
+													</div>
+
+													<form action="#">
+														<div class="form-group">
+															<label for="email">Email address:</label>
+															<input type="email" class="form-control" id="email">
+														</div>
+														<div class="form-group">
+															<label for="pwd">Password:</label>
+															<input type="password" class="form-control" id="pwd">
+														</div>
+														<div class="form-group form-check">
+															<label class="form-check-label">
+															<input class="form-check-input" type="checkbox"> Remember me
+															</label>
+														</div>
+														<button type="submit" class="btn btn-success btn-block">Login</button>
+													</form>	
+												</div>											
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="collapse" id="collapseForm2">
+							<div class="card card-body">
+								<div class="secondForm">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-md-6 offset-md-3">
+												<div class="form2">
+													<div class="form_title">
+														<h1 class="text-center">Contact Info</h1>
+													</div>						
+													<form>
+													  <div class="form-row">
+													    <div class="form-group col-md-6">
+													      <label for="email">Email</label>
+													      <input type="email" class="form-control" id="email" placeholder="Email">
+													    </div>
+													    <div class="form-group col-md-6">
+													      <label for="password">Password</label>
+													      <input type="password" class="form-control" id="password" placeholder="Password">
+													    </div>
+													  </div>
+													  <div class="form-group">
+													    <label for="address">Address</label>
+													    <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+													  </div>
+													  <div class="form-group">
+													    <label for="address2">Address 2</label>
+													    <input type="text" class="form-control" id="address2" placeholder="Apartment, studio, or floor">
+													  </div>
+													  <div class="form-row">
+													    <div class="form-group col-md-6">
+													      <label for="city">City</label>
+													      <input type="text" class="form-control" id="city">
+													    </div>
+													    <div class="form-group col-md-4">
+													      <label for="state">State</label>
+													      <select id="state" class="form-control">
+													        <option selected>Choose...</option>
+													        <option>...</option>
+													      </select>
+													    </div>
+													    <div class="form-group col-md-2">
+													      <label for="zip">Zip</label>
+													      <input type="text" class="form-control" id="zip">
+													    </div>
+													  </div>
+													  <div class="form-group">
+													    <div class="form-check">
+													      <input class="form-check-input" type="checkbox" id="gridCheck">
+													      <label class="form-check-label" for="gridCheck">
+													        Check me out
+													      </label>
+													    </div>
+													  </div>
+													  <button type="submit" class="btn btn-primary submit_btn">Submit</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- collapse end -->
+	
+	<!-- Javasript behaviour start -->
+	<section class="javascript">
+		<div class="container pb-4">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card text-center">
+					  <div class="card-body">
+					    <h1 class="card-title">Javasript Behaviour</h1>
+					    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-4">
+			  <div class="col-4">
+			    <div class="list-group" id="list-tab" role="tablist">
+			      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+			      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+			      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+			      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+			    </div>
+			  </div>
+			  <div class="col-8">
+			    <div class="tab-content" id="nav-tabContent">
+			      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, ducimus recusandae et rerum ipsum earum non magnam molestiae enim qui atque fuga amet aperiam, cupiditate, dolorem odit iure repellendus at illo aliquam perferendis explicabo dolor quibusdam, reiciendis voluptatum! Ipsam, fugit, esse quia doloribus quis reiciendis corporis repellendus possimus, officiis accusantium error, provident saepe vel. Ratione, labore voluptatem molestias a, atque expedita commodi, fugit aperiam dolorum sint sequi, aliquid fuga dolore autem consequatur. Ex ducimus nihil excepturi labore! Magni labore cumque, reiciendis error maxime odio dolor dicta sapiente tempore laborum minus nobis culpa doloribus assumenda pariatur ut sint voluptates, cupiditate perspiciatis.</div>
+			      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">quos accusamus eum minus exercitationem voluptatibus hic esse, consequuntur soluta molestiae aut. Reprehenderit, quis numquam praesentium illo consequatur dolorem culpa, maxime quod magnam. Nihil iusto cupiditate veritatis quo, ex beatae ratione illo totam dolor ullam, sequi animi amet rerum quae ut modi deserunt voluptatibus voluptate odit obcaecati quis porro nesciunt, accusantium! Odit corporis temporibus qui magnam aut aspernatur hic dolore quo soluta sequi quidem quisquam, cupiditate, modi, obcaecati quas. Excepturi sunt aspernatur debitis assumenda quia illo, culpa voluptatem nihil, eum explicabo beatae non voluptates, animi, iusto quod eveniet fugit consequatur et nemo ipsam nobis. Incidunt neque, ut eveniet a reiciendis sequi iste beatae.</div>
+			      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">ipsum dolor sit amet, consectetur adipisicing elit. Quia, ducimus recusandae et rerum ipsum earum non magnam molestiae enim qui atque fuga amet aperiam, cupiditate, dolorem odit iure repellendus at illo aliquam perferendis explicabo dolor quibusdam, reiciendis voluptatum! Ipsam, fugit, esse quia doloribus quis reiciendis corporis repellendus possimus, officiis accusantium error, provident saepe vel. Ratione, labore voluptatem molestias a, atque expedita commodi, fugit aperiam dolorum sint sequi, aliquid fuga dolore autem consequatur. Ex ducimus nihil excepturi labore! Magni labore cumque, reiciendis error maxime odio dolor dicta sapiente tempore laborum minus nobis culpa doloribus assumenda pariatur ut sint voluptates, cupiditate perspiciatis.</div>
+			      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">consectetur adipisicing elit. Quia, ducimus recusandae et rerum ipsum earum non magnam molestiae enim qui atque fuga amet aperiam, cupiditate, dolorem odit iure repellendus at illo aliquam perferendis explicabo dolor quibusdam, reiciendis voluptatum! Ipsam, fugit, esse quia doloribus quis reiciendis corporis repellendus possimus, officiis accusantium error, provident saepe vel. Ratione, labore voluptatem molestias a, atque expedita commodi, fugit aperiam dolorum sint sequi, aliquid fuga dolore autem consequatur. Ex ducimus nihil excepturi labore! Magni labore cumque, reiciendis error maxime odio dolor dicta sapiente tempore laborum minus nobis culpa doloribus assumenda pariatur ut sint voluptates, cupiditate perspiciatis.</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	<!-- Javasript behaviour end -->
+	
+
+
+	<!-- card start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card text-center">
+				  <div class="card-body">
+				    <h1 class="card-title">Bootstrap Card Area</h1>
+				    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+				    <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Hooray!">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="images/card3.jpeg" alt="card">
+					<div class="card-body">
+						<h5 class="card-title">Natural Beauty</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam expedita voluptatem facere, quos fugiat!</p>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModel"">Click Me</button>	
+						<div class="modal fade" id="myModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title">Modal title</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        Lorem ipsum dolor sit amet.
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  
+						      </div>
+						    </div>
+						  </div>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="images/card2.jpeg" alt="card">
+					<div class="card-body">
+						<h5 class="card-title">Natural Beauty</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam expedita voluptatem facere, quos fugiat!</p>
+						<button type="button" class="btn btn-primary">Click Me</button>					
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="images/card3.jpeg" alt="card">
+					<div class="card-body">
+						<h5 class="card-title">Natural Beauty</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus magnam expedita voluptatem facere, quos fugiat!</p>
+						<button type="button" class="btn btn-primary">Click Me</button>					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+	<!-- card end -->
+
+
+
+
+
+	
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- bootstap js -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+</body>
+</html>
